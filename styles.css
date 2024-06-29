@@ -1,0 +1,146 @@
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.resume-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+header a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    list-style-type: disc;
+}
+
+section h2 i {
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+.video-container, .pdf-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for video */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0;
+    margin: 20px 0;
+    display: block;
+}
+
+.video-container iframe, .pdf-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.pdf-container {
+    padding-bottom: 75%; /* Adjust ratio for PDFs if needed */
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering content */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-container:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.toggle-container i {
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .resume-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p, section p, section ul {
+        font-size: 12px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .toggle-container {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
